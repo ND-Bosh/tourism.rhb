@@ -1,0 +1,454 @@
+::before,::after
+{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+*{
+    background-color: #003;
+    color: #fff;
+}
+body
+{
+    margin: 0px;
+    padding: 0px;
+}
+header
+{
+    max-width: 2400px;
+    width: 100%;
+    object-fit: cover;
+    height: 698px;
+    background-image: url('images_patrimoine/crhbs.jpg');
+    background-attachment: scroll;
+    background-repeat: none;
+    margin: none;
+    scroll-margin-block-end: none;
+}
+header h1
+{
+    text-align: center;
+    color: #f00.5;
+    font-size: 2.2em;
+    font-family:Times New Roman, serif;
+    background-color: #030;
+    letter-spacing: 0.3rem;
+}
+h1 
+{
+    text-align: center;
+    color: #fff;
+    font-size: 2em;
+    font-family: Times New Roman serif;
+}
+header .left
+{
+    position: relative;
+    float: left;
+}
+header .right
+{
+    float: right;
+    position: relative;
+}
+.nav1
+{
+    max-width: 2400px;
+    width: 100%;
+    background-color: #036;
+    margin: 0;
+    block-size: 50px;
+    scroll-margin-block-end: 0px;
+    padding-block-start: 5px;
+    padding-block-end: 8px;
+}
+ul li
+{
+    background-color: #036;
+    list-style-type: none;
+    display: inline-block;
+    padding: 0px 6px;
+}
+.nav1 ul
+{
+    background-color: #036;
+}
+ul li a
+{
+    background-color: #036;
+    padding-bottom: 10px;
+    text-decoration: none;
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff;
+    height: 20px;
+    cursor: pointer;
+}
+ul li a:hover,ul li a:active
+{
+    background-color:#374 ;
+    border-radius: 6px 5px;
+    box-shadow: 0px 0px 5px;
+    padding-top: 18px;
+    padding-bottom: 18px;
+    cursor: pointer;
+}
+.nav2
+{
+    max-width: 2400px;
+    width: 100%;
+    height: 40px;
+    background-color: #069;
+    margin-bottom: 5%;
+}
+.nav2 input
+{
+    scroll-margin-block-start: 0px;
+    margin: 5px;
+    position: relative;
+    display: inline-block;
+}
+.nav2 input[type="search"],.nav2 input[type="button"]
+{
+    background-color: none;
+    float: right;
+    font-size: 17px;
+    border-radius: 4px 6px;
+}
+.nav2 input[type="button"]
+{
+    background-color: gray;
+    color: #fff;
+    cursor: pointer;
+}
+#title1
+{
+    margin-top: 10px;
+    font-family: Arial;
+    text-align: left;
+    margin-bottom: 5%;
+    font-size: normal;
+    margin-left: 5%;
+}
+span
+{
+    display: flex;
+}
+.describ , aside
+{
+    display: inline-block;
+    vertical-align: top;
+}
+.describ 
+{    
+    width: 100%;
+   /* border: 1px solid black;*/
+    border-radius: 6px 5px;
+    text-align: justify; 
+    margin-right: 5%;
+    overflow: auto;
+    margin-left: 3%;
+    height: 1600px;
+}
+.describ p
+{
+    font-family: Verdana serif;
+    font-size: 16px;
+    padding: 0 3% 0 3%;
+}
+#block
+{
+    display: block;
+}
+.aside1
+{
+    width: 400px;
+    height: 565px;
+    border-radius: 10px;
+    background-color: gray; 
+    margin-top: 5px;
+    padding: 3px;
+    text-align: justify
+    color: #fff;
+    font-size: 0.9em;
+    margin-left: 3%;
+    margin-right: 0px;
+}
+.aside2
+{
+    width: 400px;
+    height: 670px;
+    border-radius: 10px;
+    background-color: gray; 
+    margin-top: 5px;
+    padding: 3px;
+    text-align: justify
+    color: #fff;
+    font-size: 0.9em;
+    margin-left: 3%;
+    margin-right: 0px;
+}
+aside img
+{
+    width: 400px;
+    height: 500px;
+}
+footer
+{
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px ;
+    position: relative;
+    margin-top: 10%;
+    right: 0px;
+    left: 0px;
+}
+footer p
+{
+    text-align: center;
+}
+.article_hotel
+{    
+
+    display: inline-block;
+    vertical-align: top; 
+    text-align: justify; 
+    margin-right: 5px;
+}
+.hotel img
+{
+    border-radius: 100px;
+    width: 600px;
+    height: 500px;
+}
+.aside_hotel
+{    
+    vertical-align: top;
+    display: inline-block;
+    position: relative;
+    width: 200px;
+    height: 350px;
+    border-radius: 10px;
+    background-color: gray; 
+    margin-top: 10%;
+    padding: 3px;
+    text-align: justify;
+    color: #fff;
+    font-size: 0.9em;
+    margin-left: 3%;
+}
+.aside_hotel p
+{
+    background-color: gray; 
+}
+
+.formulaire
+{
+    border: 1px solid #036;
+    border-radius: 5px;
+    background: gray;
+    margin-top: 15%;
+}
+.formulaire h2 
+{
+    color: #fff;
+    text-align: center;
+    font-size: 2.8em;
+    text-transform: uppercase;
+}
+.formulaire p
+{
+    color: #fff;
+    margin-left: 15%;
+    margin-bottom: 10px;
+    font-size: 1.2em;
+}
+.submit 
+{
+    text-align: center;
+    width: 100%;
+    margin-left: 0;
+    margin-top: 5%;
+}
+.aside_hotel p
+{
+    overflow: auto;
+}
+.image img
+{
+    float: left;
+    position:center;
+    border-radius: 100px;
+    width: 600px;
+    height: 500px;
+    margin: 60px;
+}
+/*.image p
+{
+  margin-top: 5%;
+}*/
+input[name="nom"]
+{
+    width: 120px;
+    border-radius: 100px;
+    margin: 5px;
+    font-size: 16px;
+}
+input[name="prenom"]
+{
+    width: 240px;
+    border-radius: 100px;
+    margin: 5px;
+    font-size: 16px;
+}
+select[name="hotel"]
+{
+    width: 240px;
+    border-radius: 100px;
+    margin: 5px;
+    font-size: 16px;
+}
+input[name="mail"]
+{
+    width: 300px;
+    border-radius: 100px;
+    margin: 5px;
+    font-size: 16px;
+}
+input[type="number"]
+{
+    width: 60px;
+    border-radius: 100px;
+    margin: 5px;
+    font-size: 16px;
+}
+input[type="tel"]
+{
+    width: 240px;
+    border-radius: 100px;
+    margin: 5px;
+    font-size: 16px;
+}
+select[name="chambre"]
+{
+    width: 300px;
+    border-radius: 100px;
+    margin: 5px;
+    font-size: 16px;
+}
+input[id="nb_prs"]
+{
+    width: 120px;
+    border-radius: 100px;
+    margin: 5px;
+    font-size: 16px;
+}
+input[type="date"]
+{
+    width: 120px;
+    border-radius: 100px;
+    margin: 5px;
+    font-size: 16px;
+}
+input[type="time"]
+{
+    width: 80px;
+    border-radius: 100px;
+    margin: 5px;
+    font-size: 16px;
+}
+input[id="date_depart1"]
+{
+    width: 80px;
+    border-radius: 100px;
+    margin: 5px;
+    font-size: 16px;
+}
+input[id="date_depart2"]
+{
+    width: 80px;
+    border-radius: 100px;
+    margin: 5px;
+    font-size: 16px;
+}
+input[id="date_depart3"]
+{
+    width: 120px;
+    border-radius: 100px;
+    margin: 5px;
+    font-size: 16px;
+}
+#spaciale
+{
+    font-size: normal;
+}
+textarea[name="spaciale"]
+{
+    border-radius: 100px;
+    margin: 5px;
+    font-size: 16px;
+}
+button[type="submit"]
+{
+    width: 100%;
+    border-radius: 100px;
+    margin: 5px;
+    font-size: 18px;
+    background-color: #030;
+    color: #fff;
+    
+}
+a img 
+{
+  	position:center;
+    border-radius: 100px;
+    width: 600px;
+    height: 500px;
+    margin: 60px;
+}
+.galery
+{
+    width: 100%;
+    height: auto;
+    margin: 5px;
+    padding: 10px;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(auto-fill,300px);
+    grid-gap: 10px;
+}
+#galery
+{
+    width: 300px;
+    height: 300px;
+  /*  overflow: hidden;*/
+}
+#galery img
+{
+    width: 300px;
+    height: 300px;
+    border-radius: 10px;
+}
+#galery img:hover
+{
+    transform: scale(1.5,1.5);
+    transition: 3s;
+    animation-duration:3s;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #374;
+    box-shadow: 0 0 10px #374 inside;    
+    filter: drop-shadow(0 0 10px #374);
+}
+#title_galery
+{
+    text-align: center;
+    font-size: 2em;
+    font-family: Times New Roman,serif;
+    margin-bottom: 5%;
+}
+{
+@media only screen and (max-width:550px) {
+
+body,header, footer,.describ ,#displays ,#displays a img,nav,img,section,article,aside,span,.image img,.formulaire{
+width:100%;
+}
+}

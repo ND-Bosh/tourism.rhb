@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script language="javascript" type="text/javascript" src="first_js.js"></script>
+        <link rel="stylesheet" type="text/css" href="all.css" />
+        <link rel="icon" href="images_patrimoine/crhbs-png.png" />
+        <title>Tourisme dans le Hauts-Bassins</title>
+        <meta charset="utf-8"/>
+        <meta http-equiv="X-UA-Compatible" content="ie-edge"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+					<!--[if lte IE 7]>
+				<link rel="stylesheet" href="style_ie.css" /><![endif]-->
+ </head>
+    <body>
+        <header>
+            <h1>HAUTS-BASSINS</h1>
+            <div class="left"><img src="images_patrimoine/crhbs-png.png" width="100px" height="60px"/></div>
+            <div class="right"><img src="images_patrimoine/crhbs-png.png" width="100px" height="60px"/>
+            </div>
+        </header>
+       <nav class="nav1">
+            <ul>
+                <li><a href="home.html">accueil</a></li>
+                <li><a href="web_patrimoine.html">patrimoine</a></li>
+                <li><a href="hotel.html">réservation d'hôtel</a></li>
+                <li><a href="galery.html">galerie</a></li>
+            </ul>
+      </nav>
+      <nav class="nav2">
+            <input type="search" name="search" id="search" value="" onchange="research()"/><input type="button" id="button" value="Chercher"  onclick="research()"/>
+      </nav>
+ <h1>RESERVATION D'HÔTEL</h1>
+    <h2 id="title1">Les hôtels disponibles actuellement </h2>
+    <section >
+        <article class="article_hotel">
+        <p class="hotel"><img src="images_patrimoine/villa-bobo.jpg" alt="Hôtel 5 etoiles à Bobo" title="Hôtel 5 etoiles à Bobo Dioulasso" /></p>
+                </article>
+         <aside class="aside_hotel"><p>Hôtel Villabobo 5 étoiles à Bobo Dioulassobo<br/>Près de Koko, proche du lycée Coulibaly,du laboratoire Exalab et du Ministère des transports, dans une belle maison, calme, proche du centre ville, Xavier a aménagé un lieu convivial à prix très doux. Les chambres sont spacieuses et d’une propreté irréprochable. La literie a été choisie avec soin pour les inconditionnels du bon sommeil.</p></aside></section>
+    <section>
+        <article class="article_hotel"><p class="hotel"><img src="images_patrimoine/la-cour-interieure.jpg" alt="La cour la cour interieur de l'hôtel   l'Entente" title="L'hôtel l'Entente 5 etoile avec un paysage magnifique" /></p></article>
+        <aside class="aside_hotel">
+        <p> Hôtel l'Entente 5 étoiles avec un magnifique paysage.<br/>Un hôtel de 30 chambres ventilées ou climatisées au confort apprécié des « sac-à-dos », à ne pas confondre avec le bar-dancing du même nom. Dans la cour, entourée de grands palmiers et de bananiers, deux paillottes au mobilier élégant où il est agréable de boire un jus de fruits frais (600 FCFA).
+            </aside></section>
+    <section>
+        <article class="article_hotel"><p class="hotel"><img src="images_patrimoine/hotel-residence-toucouleurs.jpg" alt="hotel residence toucouleurs" title="Hôtel Residence Toucouleurs,un hôtel au climat chaleureux"/></p></article><aside class="aside_hotel">Hôtel Residence Toucouleurs.<br/>Un hôtel de charme, qui a ouvert ses portes en 2011. Géré par Fati, passionnée de déco, cet espace légèrement excentré offre cinq chambres parfaitement aménagées, avec de belles touches de couleurs, ainsi qu'une agréable terrasse sous des arcades, face à une piscine lovée au coeur d'un jardin fleuri. Restauration et piscine uniquement pour les clients de l'hôtel, atmosphère très cocooning.</p></aside></section>
+            <div class="formulaire"><h2 id="upper">Formulaire de reservation d'hôtel</h2>
+    <form method="post" action="data_treatment.php" id="formulaire">
+        <p><label for="hotel">Nom d'hôtel*</label>
+            <select name="hotel" id="hotel" required>
+            <option></option>
+            <option value="hôtel Villabobo">Hôtel Villabobo</option>
+            <option value="Hôtel l'Entente">Hôtel l'Entente</option>
+            <option value="Hôtel Residence Toucouleuts">Hôtel Residence Toucouleuts</option></select></p>
+            <p><label for="prenom">Nom complet* </label><input type="text" name="nom" id="prenom" placeholder="nom" required="required"/><input type="text" name="prenom" id="prenom" placeholder="prénom" required="required"/></p>
+            <p><label for="mail">E-mail*</label><input type="mail" name="mail" id="mail" placeholder="prénom@gmail.com" required="required"></p>
+            <p><label for="phone">Téléphone*</label><input type="number" id="phone" placeholder="(00226)" min="0" required=""/><input type="tel" id="phone" placeholder="76000000" min="0" required=""/></p>
+            <p><label for="chambre">Type de chambre*</label>
+            <select name="chambre" id="chambre" required="required">
+             <option></option>
+            <option value="Chambre standard (1 à 2 personnes)">Chambre standard (1 à 2 personnes)</option>
+            <option value="Chambre familiale (1 à 4 personnes)">Chambre familiale (1 à 4 personnes)</option>
+            <option value="Chambre familiale (1 à 4 personnes)">Chambre familiale (1 à 4 personnes)</option>
+            <option value="Dortoir pour femmes (6 personnes)">Dortoir pour femmes (6 personnes)</option>
+            <option value="Dortoir pour hommes (6 personnes)">Dortoir pour hommes (6 personnes)</option>
+                        </select></p>
+            <p><label for="nb_pers">Nombre de personnes*</label><input type="number" id="nb_pers" min="1" max="10"  required="required"/></p>
+            <p><label for="date_arrivee">Date et heure d'arrivée*</label><input type="date" id="date_arrivee" required="required"/><input type="time" id="date" required="required"/></p>
+            <p><label for="date_depart">Date de depart*</label><input type="number" id="date_depart1" min="1" max="31" placeholder="31" required="required"/><input type="number" id="date_depart2" min="1" max="12" placeholder="12" required="required"/>
+            <input type="number" id="date_depart3" placeholder="2022" min="2022" required="required"/></p>
+            <p><label id="spacieuses" for="speciale">Demande speciale</label><br/><textarea name="speciale" id="speciale" cols="60px" rows=" 6px"></textarea></p>
+            <p><div class="submit">
+                        <button style="text-transform:uppercase" type="submit" value="réserver" name="valider">réserver</button>
+                  </div></p>
+        </form>
+    </div>
+ <footer>
+            <p>Contact : 00226 76 52 80 30<br/>
+            copyright ©</p>
+ </footer>
+</body>
+</html>
